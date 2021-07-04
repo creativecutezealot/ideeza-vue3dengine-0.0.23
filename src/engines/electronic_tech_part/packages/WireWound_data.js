@@ -1,0 +1,51 @@
+export default {
+  // name: '',
+  // package: '',
+  dimensions: {
+    t_min_bandwidth: '0.37',
+    t_max_bandwidth: '0.65',
+    tw_min_bandwidth: '1.95',
+    tw_max_bandwidth: '2.11',
+    min_body_width_w: '2.1',
+    max_body_width_w: '2.54',
+    min_body_length_l: '2.2',
+    max_body_length_l: '2.8',
+    pin_location: '0',
+    maximum_height: '2.29'
+  },
+  package_heel: {smin: '', smax: '', isCalculated: false},
+  solder_filters: {toe_filter: '', hill_filter: '', side_filter: '', board_density_level: '', isDefault: false},
+  component_tolerances: {overall_width: '', heel_distance: '', lead_width: '', isCalculated: false},
+  IPC_tolerances: {fabrication: '', placement: '', courtyard: '', isDefault: false},
+  footprint_dimension: {x: '', y: '', c: '', isCalculated: false},
+  silkscreen: {
+    isCalculated: true, //
+    LineWidth: 0.1, //
+    r1: 7, //
+    r2: 7 //
+  },
+  courtyard: {
+    isCourtyardCalculated: false,
+    isAssemblyCalculated: false,
+    isCompBodyCalculated: false,
+    addCourtYardInfo: false,
+    addAssemblyInfo: true,
+    addCompBodyInfo: true,
+    courtV1: '11.5',
+    courtV1LineWidth: '0.5',
+    courtV2: '11.5',
+    courtV2layer: '1',
+    assemblyA: '11.5',
+    assemblyALineWidth: '0.5',
+    assemblyB: '11.5',
+    assemblyBlayer: '1',
+    addCompWidth: '11.5',
+    addCompLength: '0.5',
+    addCompLayer: '12'
+  },
+  footprint_description: {
+    suggested: false,
+    suggestedName: '',
+    suggestedDesc: ''
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "name": "@ideeza/vue3dengine",
+  "version": "0.0.23",
+  "description": "3d engines based on babylonjs framework using vuejs",
+  "author": "author <name@mail.com>",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name vue3dengine ./src/entry.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "b64-to-blob": "^1.2.19",
+    "babylonjs": "^4.0.3",
+    "babylonjs-gui": "^4.0.3",
+    "babylonjs-loaders": "^4.0.3",
+    "babylonjs-materials": "^4.0.3",
+    "babylonjs-serializers": "^4.0.3",
+    "core-js": "^3.3.2",
+    "node-blockly": "^1.2.3",
+    "vue": "^2.6.10",
+    "whammy": "0.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.0.0",
+    "@vue/cli-plugin-eslint": "^4.0.0",
+    "@vue/cli-service": "^4.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "main": "./dist/vue3dengine.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ]
+}
